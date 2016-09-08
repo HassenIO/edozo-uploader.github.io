@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edozo:uploader - Create a Task</title>
+    <link rel="stylesheet" href="../../public/vendors/foundation-6/css/foundation.css">
+    <link rel="stylesheet" href="../../public/vendors/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../public/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <ul>
+          <li><img src="../../public/images/logo.png" alt="edozo logo"></li>
+          <li><div class="module">: uploader</div></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu" data-dropdown-menu>
+          <li><a href="#">Workspace</a></li>
+          <li><a href="#">My team</a></li>
+          <li><a href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div><!-- End of .top-bar -->
+
+    <div class="menu-centered">
+      <ul class="menu">
+        <li class="active"><a href="#">TASKS</a></li>
+        <li><a href="#">COMPS</a></li>
+        <li><a href="#">LISTINGS</a></li>
+      </ul>
+    </div><!-- End of .menu-centered -->
+
+    <div class="title">
+      <h2>Create a new Task</h2>
+    </div><!-- End of .title -->
+
+    <div class="row">
+      <div class="small-offset-3 small-6 columns end">
+        <form>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="title"> Task title
+                <input type="text" name="title">
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="description"> Description
+                <textarea name="description" class="extended" rows="3"></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="row">
+                <div class="small-4 columns">
+                  <label for="exampleFileUpload" class="extended button">Add attachments</label>
+                  <input type="file" id="exampleFileUpload" class="show-for-sr">
+                </div>
+                <div class="small-8 columns">
+                  <label class="text-left middle">Multiple PDF, Excel, Word, images,...</label>
+                </div>
+              </div><!-- End of .row -->
+              <div class="row">
+                <div class="small-3 columns">
+                   <label for="priority" class="text-left middle">Priority</label>
+                </div>
+                <div class="small-9 columns">
+                  <select>
+                    <option>Urgent</option>
+                    <option>High</option>
+                    <option>Normal</option>
+                    <option>Low</option>
+                  </select>
+                </div>
+              </div><!-- End of .row -->
+              <div class="row">
+                <div class="small-3 columns">
+                   <label for="priority" class="text-left middle">Assign to group</label>
+                </div>
+                <div class="small-9 columns">
+                  <select>
+                    <option>Team A</option>
+                    <option>Team B</option>
+                    <option>Team C</option>
+                  </select>
+                </div>
+              </div><!-- End of .row -->
+              <div class="row">
+                <div class="small-3 columns">
+                   <label for="priority" class="text-left middle">Assign to user</label>
+                </div>
+                <div class="small-9 columns">
+                  <select>
+                    <option>John Doe</option>
+                    <option>Michael Jackson</option>
+                    <option>Freddie Mercury</option>
+                    <option>David Bowie</option>
+                    <option>Nina Simone</option>
+                  </select>
+                </div>
+              </div><!-- End of .row -->
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <input type="submit" class="expanded success button" value="Create this task">
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div><!-- End or .row -->
+
+    <script src="../../public/vendors/foundation-6/js/vendor/jquery.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/what-input.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/foundation.js"></script>
+    <script src="../../public/javascript/app.js"></script>
+  </body>
+</html>

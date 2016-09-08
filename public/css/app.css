@@ -1,0 +1,132 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+i.fa { margin-right: 10px }
+
+/* =========================
+   TOP BAR STYLING
+========================= */
+
+.top-bar {
+  background: #2C3840;
+  color: #fff;
+  padding: 0;
+}
+
+  .top-bar .top-bar-title {
+    height: 45px;
+  }
+
+    .top-bar .top-bar-title ul {
+      background: transparent;
+      margin-left: 20px;
+      overflow: hidden;
+    }
+
+      .top-bar .top-bar-title ul li {
+        float: left;
+        list-style-type: none;
+        margin-right: 10px;
+      }
+
+      .top-bar .top-bar-title ul img {
+        height: 25px;
+        margin-top: 8px;
+      }
+
+      .top-bar .top-bar-title ul .module {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 3px;
+      }
+
+  .top-bar ul.menu {
+    background: transparent;
+    font-size: 14px;
+  }
+    .top-bar ul.menu li {
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      height: 45px;
+    }
+
+    .top-bar ul.menu a {
+      color: #fff;
+      font-weight: 600;
+    }
+
+      .top-bar ul.menu a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+/* =========================
+   TOP MENU STYLING
+========================= */
+
+.menu-centered {
+  background: #004E6A;
+}
+
+  .menu-centered ul {
+    margin-bottom: -5px;
+  }
+
+  .menu-centered li {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    width: 130px;
+  }
+
+    .menu-centered li:hover {
+      border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-centered li.active {
+      border-bottom: 5px solid rgba(255, 255, 255, 0.4);
+    }
+
+      .menu-centered li.active a {
+        background: transparent;
+      }
+
+  .menu-centered a {
+    color: #fff;
+  }
+
+/* =========================
+   TITLE OF THE PAGE
+========================= */
+
+.title {
+  margin: 80px 0 40px;
+}
+
+  .title h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+/* =========================
+   FOOTER
+========================= */
+
+#footer { height: 100px }
+
+/* =========================
+   SIGN IN PAGE
+========================= */
+
+#sign-in h2 {
+  font-size: 24px;
+  margin: 120px 0 40px;
+  text-align: center;
+}
+
+#sign-in input[type=submit] {
+  margin-top: 30px;
+}

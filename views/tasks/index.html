@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edozo:uploader - List Tasks</title>
+    <link rel="stylesheet" href="../../public/vendors/foundation-6/css/foundation.css">
+    <link rel="stylesheet" href="../../public/vendors/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../public/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <ul>
+          <li><img src="../../public/images/logo.png" alt="edozo logo"></li>
+          <li><div class="module">: uploader</div></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu" data-dropdown-menu>
+          <li><a href="#">Workspace</a></li>
+          <li><a href="#">My team</a></li>
+          <li><a href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div><!-- End of .top-bar -->
+
+    <div class="menu-centered">
+      <ul class="menu">
+        <li class="active"><a href="#">TASKS</a></li>
+        <li><a href="#">COMPS</a></li>
+        <li><a href="#">LISTINGS</a></li>
+      </ul>
+    </div><!-- End of .menu-centered -->
+
+    <div class="title">
+      <h2>List Tasks</h2>
+    </div><!-- End of .title -->
+
+    <!-- Section to search, filter and create comps -->
+    <div class="row">
+      <div class="large-3 columns">
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="Search a task">
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Search">
+          </div>
+        </div>
+      </div>
+      <div class="large-7 columns">
+        <div class="row collapse">
+          <div class="large-3 columns">
+            <select>
+              <option>All priorities</option>
+              <option>Priority: Urgent</option>
+              <option>Priority: High</option>
+              <option>Priority: Normal</option>
+              <option>Priority: Low</option>
+            </select>
+          </div>
+          <div class="large-3 columns">
+            <select>
+              <option>Unfinished tasks</option>
+              <option>Status: Unassigned</option>
+              <option>Status: Open</option>
+              <option>Status: In Review</option>
+              <option>Status: Completed</option>
+            </select>
+          </div>
+          <div class="large-3 columns">
+            <select>
+              <option>All groups</option>
+              <option>Group: Team A</option>
+              <option>Group: Team B</option>
+              <option>Group: Team C</option>
+            </select>
+          </div>
+          <div class="large-3 columns">
+            <input type="submit" class="expanded button" value="Filter tasks">
+          </div>
+        </div><!-- End of .row -->
+      </div>
+      <div class="large-2 columns">
+        <a href="new.html" class="expanded success button"><i class="fa fa-plus"></i> Create a task</a>
+      </div>
+    </div>
+
+    <!-- Section that lists tasks as a table -->
+    <div class="row">
+      <div class="large-12 columns">
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Group</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a>Edozo comparables A12-78</a></td>
+              <td><span class="warning label">High</span></td>
+              <td>Open</td>
+              <td>Team A</td>
+            </tr>
+            <tr>
+              <td><a>Edozo comparables B23</a></td>
+              <td><span class="label">Normal</span></td>
+              <td><i class="fa fa-warning"></i> Unassigned</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a>Edozo comparables A34</a></td>
+              <td><span class="alert label">Urgent</span></td>
+              <td>Open</td>
+              <td>Team B</td>
+            </tr>
+            <tr>
+              <td><a>Edozo comparables C102</a></td>
+              <td><span class="secondary label">Low</span></td>
+              <td>In Review</td>
+              <td>Team A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- End or .large-12.columns -->
+    </div><!-- End or .row -->
+
+    <!-- Pagination section -->
+    <div class="row">
+      <hr>
+
+      <div class="small-12 columns">
+        <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+          <li class="pagination-previous disabled">Previous</li>
+          <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li class="ellipsis"></li>
+          <li><a href="#" aria-label="Page 12">12</a></li>
+          <li><a href="#" aria-label="Page 13">13</a></li>
+          <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+        </ul>
+      </div>
+    </div><!-- End of .row -->
+
+    <script src="../../public/vendors/foundation-6/js/vendor/jquery.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/what-input.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/foundation.js"></script>
+    <script src="../../public/javascript/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edozo:uploader - Create a Comp</title>
+    <link rel="stylesheet" href="../../public/vendors/foundation-6/css/foundation.css">
+    <link rel="stylesheet" href="../../public/vendors/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../public/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <ul>
+          <li><img src="../../public/images/logo.png" alt="edozo logo"></li>
+          <li><div class="module">: uploader</div></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu" data-dropdown-menu>
+          <li><a href="#">Workspace</a></li>
+          <li><a href="#">My team</a></li>
+          <li><a href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div><!-- End of .top-bar -->
+
+    <div class="menu-centered">
+      <ul class="menu">
+        <li><a href="#">TASKS</a></li>
+        <li class="active"><a href="#">COMPS</a></li>
+        <li><a href="#">LISTINGS</a></li>
+      </ul>
+    </div><!-- End of .menu-centered -->
+
+    <div class="title">
+      <h2>Create a new Comp</h2>
+    </div><!-- End of .title -->
+
+    <!-- The creation form -->
+    <form>
+      <div class="row">
+        <div class="small-6 columns"><!-- Left side form -->
+
+          <h5>Property information</h5>
+          <hr>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="address"> Address
+                <input type="text" name="address">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="town"> Town
+                <input type="text" name="town">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="postcode"> Postcode
+                <input type="text" name="postcode">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="county"> County
+                <input type="text" name="county">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="transaction"> Transaction type
+                <select name="transaction">
+                  <option>Freehold vacant possession sale / purchase</option>
+                  <option>Open market letting</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="small-6 columns"><!-- Right side form -->
+
+          <h5>Vendor information</h5>
+          <hr>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="vendor_name"> Name
+                <input type="text" name="vendor_name">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="company"> Company
+                <input type="text" name="company">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="email"> Email
+                <input type="text" name="email">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="phone"> Phone
+                <input type="text" name="phone">
+              </label>
+            </div>
+          </div><!-- End of .row -->
+
+        </div>
+      </div><!-- End of .row -->
+
+      <div class="row">
+        <div class="small-offset-4 small-4 columns end">
+          <input type="submit" class="expanded success button" value="Create this comp">
+        </div>
+      </div>
+    </form>
+
+    <script src="../../public/vendors/foundation-6/js/vendor/jquery.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/what-input.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/foundation.js"></script>
+    <script src="../../public/javascript/app.js"></script>
+  </body>
+</html>

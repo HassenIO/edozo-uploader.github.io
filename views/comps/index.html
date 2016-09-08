@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edozo:uploader - List of comps</title>
+    <link rel="stylesheet" href="../../public/vendors/foundation-6/css/foundation.css">
+    <link rel="stylesheet" href="../../public/vendors/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../public/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <ul>
+          <li><img src="../../public/images/logo.png" alt="edozo logo"></li>
+          <li><div class="module">: uploader</div></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu" data-dropdown-menu>
+          <li><a href="#">Workspace</a></li>
+          <li><a href="#">My team</a></li>
+          <li><a href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div><!-- End of .top-bar -->
+
+    <div class="menu-centered">
+      <ul class="menu">
+        <li><a href="#">TASKS</a></li>
+        <li class="active"><a href="#">COMPS</a></li>
+        <li><a href="#">LISTINGS</a></li>
+      </ul>
+    </div><!-- End of .menu-centered -->
+
+    <div class="title">
+      <h2>List Comps</h2>
+    </div><!-- End of .title -->
+
+    <!-- Section to search, filter and create comps -->
+    <div class="row">
+      <div class="large-4 columns">
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="Search a comp by address or ID">
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Search">
+          </div>
+        </div>
+      </div>
+      <div class="large-6 columns">
+        <div class="row collapse">
+          <div class="large-5 columns">
+            <select>
+              <option>All types</option>
+              <option>Market letting</option>
+            </select>
+          </div>
+          <div class="large-5 columns">
+            <select>
+              <option>All statuses</option>
+              <option>Ready to check</option>
+              <option>Approved</option>
+              <option>Published</option>
+            </select>
+          </div>
+          <div class="large-2 columns">
+            <input type="submit" class="expanded button" value="Filter comps">
+          </div>
+        </div><!-- End .row -->
+      </div>
+      <div class="large-2 columns">
+        <a href="new.html" class="expanded success button"><i class="fa fa-plus"></i> Upload a comp</a>
+      </div>
+    </div>
+
+    <!-- Section that display list of comps as a table -->
+    <div class="row">
+      <div class="large-12 columns">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Address</th>
+              <th>ID</th>
+              <th>Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a>The Pavillion, 96 Kensignton Hight Street, London</a></td>
+              <td>#0003321</td>
+              <td>Market letting</td>
+              <td><span class="warning label">Ready to check</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a>42 St. Paul's Churchyard, London</a></td>
+              <td>#0003452</td>
+              <td>Market letting</td>
+              <td><span class="warning label">Ready to check</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a>10 Downing Street, London</a></td>
+              <td>#0004002</td>
+              <td>Market letting</td>
+              <td><span class="success label">Approved</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a>1 Oxford Street, London</a></td>
+              <td>#0004032</td>
+              <td>Market letting</td>
+              <td><span class="label">Published</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- End or .large-12.columns -->
+    </div><!-- End or .row -->
+
+    <div class="row">
+      <div class="small-6 columns end">
+        <div class="row">
+          <div class="small-5 columns">
+            <label for="right-label" class="text-left middle"><i class="fa fa-check-square-o"></i>Apply status to selected comps</label>
+          </div>
+          <div class="small-5 columns">
+            <select>
+              <option>Make ready to check</option>
+              <option>Approve</option>
+              <option>Publish</option>
+            </select>
+          </div>
+          <div class="small-2 columns">
+            <input type="submit" value="Apply" class="button">
+          </div>
+        </div><!-- End of .row -->
+      </div>
+    </div><!-- End of .row -->
+
+    <!-- Pagination section -->
+    <div class="row">
+      <hr>
+
+      <div class="small-12 columns">
+        <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+          <li class="pagination-previous disabled">Previous</li>
+          <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li class="ellipsis"></li>
+          <li><a href="#" aria-label="Page 12">12</a></li>
+          <li><a href="#" aria-label="Page 13">13</a></li>
+          <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+        </ul>
+      </div>
+    </div><!-- End of .row -->
+
+    <script src="../../public/vendors/foundation-6/js/vendor/jquery.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/what-input.js"></script>
+    <script src="../../public/vendors/foundation-6/js/vendor/foundation.js"></script>
+    <script src="../../public/javascript/app.js"></script>
+  </body>
+</html>
